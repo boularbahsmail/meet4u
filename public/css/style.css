@@ -257,3 +257,13 @@ body::-webkit-scrollbar {
 	border-radius: 0px;
 	transition: 1s;
   } 
+
+#m {
+	transition: 0.5s;
+	margin-left: 10%;
+}
+
+  #continue {
+  	transition: 0.5s;
+  	opacity: 0;
+  }
