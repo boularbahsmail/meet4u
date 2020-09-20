@@ -79,7 +79,7 @@ a {
 	color: #fff;
 	padding: 20px 20px 60px;
 	overflow-y: scroll;
-	border-right: 2px solid #eee;
+	/*border-right: 2px solid #eee;*/
 }
 
 /* width */
@@ -119,8 +119,10 @@ a {
 
 .chat-messages {
 	padding: 30px;
-	max-height: 500px;
+	max-height: 450px;
 	overflow-y: scroll;
+	border: 1px solid #eef;
+	border-radius: 5px;
 }
 
 .chat-messages .message {
@@ -261,14 +263,14 @@ a {
 }
 
 body::-webkit-scrollbar {
-	width: 0.5em;
+	width: 0.2em;
 	background-color: white;
   }
   body::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
   }
   body::-webkit-scrollbar-thumb {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: #ccc;
 	outline: 1px solid white;
 	border-radius: 0px;
 	transition: 1s;
@@ -283,3 +285,26 @@ body::-webkit-scrollbar {
   	transition: 0.5s;
   	opacity: 0;
   }
+
+/* loading */
+.loader {
+	border: 2px solid transparent; /* transparent */
+	border-top: 2px solid rgb(1, 22, 39); /* black */
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	animation: spin 0.2s linear infinite;
+}
+
+@keyframes spin {
+    0% { 
+    	transform: rotate(0deg); 
+    }
+    100% { 
+    	transform: rotate(360deg);
+    	}
+}
+#load {
+	display: none;
+	margin: 2.5%;
+}

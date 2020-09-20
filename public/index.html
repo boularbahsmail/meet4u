@@ -12,10 +12,13 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<title>Meet</title>
+		<title>Meet • Login</title>
 	</head>
 	<body>
 		<div class="join-container">
+	    <span style="float: right;" id="load">
+        <div class="loader"></div>
+    	</span>
 			<header class="join-header">
 				<h1 style="color: #001;"><span id="m" style="color: white;background-color: #001;padding: 1% 2.5%;border-radius: 5px;font-size: 30px;">M</span><span id="continue">eet</span></h1>
 			</header>
@@ -44,7 +47,7 @@
 						</select>
 					</div>
 					<center>
-						<button type="submit" class="btn" style="border: 1px solid #001;transition: 0.3s;width: 50%;padding: 15px;">
+						<button onclick="load();" type="submit" class="btn" style="border: 1px solid #001;transition: 0.3s;width: 50%;padding: 15px;" id="btn">
 						Join chat
 					</button>
 					</center>
@@ -56,13 +59,22 @@
 			var m = document.getElementById('m');
 			setTimeout(function(){ 
 				m.style.marginLeft="0"; 
-			}, 1000);
+			}, 1500);
 
 			var con = document.getElementById('continue');
 			setTimeout(function(){ 
 				con.style.opacity="1"; 
-			}, 1500);
+			}, 2000);
+
+			function load() {
+				var butt = document.getElementById('username').value;
+				if(butt){
+					document.getElementById('load').style.display="block";
+				}
+			}
 		</script>
-		<!-- VISA Tracking Code for http://me-et.herokuapp.com/ --><script>(function(v,i,s,a){if(!v._visaSettings){v._visaSettings={};}v._visaSettings["99922807-fb39-11ea-b589-901b0edac50a"]={v:"0.3",s:"99922807-fb39-11ea-b589-901b0edac50a",a:"1"};_v=i.getElementsByTagName("head")[0];_a=_v;_i=i.createElement("script");_s=_i;_s.defer="defer";_s.src=s+a+v._visaSettings["99922807-fb39-11ea-b589-901b0edac50a"].v;_a.appendChild(_s);})(window,document,"//app-worker.visitor-analytics.io/main",".js?s=99922807-fb39-11ea-b589-901b0edac50a&v=")</script><!-- VISA Tracking Code for http://me-et.herokuapp.com/ -->
+		<!-- VISA Tracking Code for http://me-et.herokuapp.com/ -->
+		<script>(function(v,i,s,a){if(!v._visaSettings){v._visaSettings={};}v._visaSettings["99922807-fb39-11ea-b589-901b0edac50a"]={v:"0.3",s:"99922807-fb39-11ea-b589-901b0edac50a",a:"1"};_v=i.getElementsByTagName("head")[0];_a=_v;_i=i.createElement("script");_s=_i;_s.defer="defer";_s.src=s+a+v._visaSettings["99922807-fb39-11ea-b589-901b0edac50a"].v;_a.appendChild(_s);})(window,document,"//app-worker.visitor-analytics.io/main",".js?s=99922807-fb39-11ea-b589-901b0edac50a&v=")</script>
+		<!-- VISA Tracking Code for http://me-et.herokuapp.com/ -->
 	</body>
 </html>
