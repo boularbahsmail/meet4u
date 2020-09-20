@@ -179,9 +179,9 @@ a {
 	text-align: center;
 	padding: 30px;
 	background: transparent;
-	border-right: 2px solid #eee;
-	border-left: 2px solid #eee;
-	border-top: 2px solid #eee;
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
@@ -189,9 +189,10 @@ a {
 .join-main {
 	padding: 40px 40px;
 	background: transparent;
-	border-right: 2px solid #eee;
-	border-left: 2px solid #eee;
-	border-bottom: 2px solid #eee;
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
+	border-radius: 5px;
+	border-bottom: 1px solid #eee;
 }
 
 #room-name {
@@ -235,9 +236,11 @@ a {
 	border: 1px solid #eee;
 	border-radius: 5px;
 	height: 50px;
+	outline: none;
 	width: 100%;
 	transition: 0.3s;
 }
+
 .join-main select:focus {
 	box-shadow: 0 0 0 0.09rem #001;
 }

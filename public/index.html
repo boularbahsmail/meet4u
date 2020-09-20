@@ -35,7 +35,7 @@
 					<div class="form-control">
 						<label for="room">Room</label>
 						<select name="room" id="room">
-							<option value="Classmates">Classmates</option>
+							<option class="option" value="Classmates">Classmates</option>
 							<option value="Workers">Workers</option>
 							<option value="Family">Family</option>
 							<option value="Friends">Friends</option>
@@ -43,21 +43,25 @@
 							<option value="Others">Others</option>
 						</select>
 					</div>
-					<button type="submit" class="btn">Join Chat</button>
+					<center>
+						<button type="submit" class="btn" style="border: 1px solid #001;transition: 0.3s;width: 50%;padding: 15px;">
+						Join chat
+					</button>
+					</center>
 				</form>
 			</main>
 		</div>
 		<center><h5 style="color: #aaa;font-weight: inherit;">&copy; 2020 BOULARBAH ISMAIL</h5></center>
 		<script type="text/javascript">
-			var con = document.getElementById('continue');
-			setTimeout(function(){ 
-				con.style.opacity="1"; 
-			}, 1500);
-
 			var m = document.getElementById('m');
 			setTimeout(function(){ 
 				m.style.marginLeft="0"; 
 			}, 1000);
+
+			var con = document.getElementById('continue');
+			setTimeout(function(){ 
+				con.style.opacity="1"; 
+			}, 1500);
 		</script>
 		<!-- VISA Tracking Code for http://me-et.herokuapp.com/ --><script>(function(v,i,s,a){if(!v._visaSettings){v._visaSettings={};}v._visaSettings["99922807-fb39-11ea-b589-901b0edac50a"]={v:"0.3",s:"99922807-fb39-11ea-b589-901b0edac50a",a:"1"};_v=i.getElementsByTagName("head")[0];_a=_v;_i=i.createElement("script");_s=_i;_s.defer="defer";_s.src=s+a+v._visaSettings["99922807-fb39-11ea-b589-901b0edac50a"].v;_a.appendChild(_s);})(window,document,"//app-worker.visitor-analytics.io/main",".js?s=99922807-fb39-11ea-b589-901b0edac50a&v=")</script><!-- VISA Tracking Code for http://me-et.herokuapp.com/ -->
 	</body>
