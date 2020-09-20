@@ -155,12 +155,17 @@ a {
 .chat-form-container input[type='text'] {
 	font-size: 16px;
 	height: 50px;
-	border: 2px solid #eee;
+	border: 1px solid #eee;
 	border-radius: 5px;
 	display: flex;
 	flex: 1;
 	padding: 3%;
 	flex-direction: column;
+	transition: 0.3s;
+}
+
+.chat-form-container input[type='text']:focus {
+	box-shadow: 0 0 0 0.09rem #001;
 }
 
 /* Join Page */
@@ -214,19 +219,27 @@ a {
 .join-main input[type='text'] {
 	font-size: 16px;
 	padding: 5%;
-	border: 2px solid #eee;
+	border: 1px solid #eee;
 	border-radius: 5px;
 	height: 50px;
 	width: 100%;
+	transition: 0.3s;
+}
+.join-main input[type='text']:focus {
+	box-shadow: 0 0 0 0.09rem #001;
 }
 
 .join-main select {
 	font-size: 16px;
 	padding:0 5%;
-	border: 2px solid #eee;
+	border: 1px solid #eee;
 	border-radius: 5px;
 	height: 50px;
 	width: 100%;
+	transition: 0.3s;
+}
+.join-main select:focus {
+	box-shadow: 0 0 0 0.09rem #001;
 }
 
 .join-main .btn {
