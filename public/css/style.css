@@ -39,13 +39,13 @@ a {
 	background-color: #001;
 	color: #fff;
 	border-radius: 5px;
-	border: 2px solid #001;
+	border: 1px solid #001;
 	font-size: 17px;
-	transition: 0.7s;
+	transition: 0.3s;
 }
 .btn:hover {
 	background-color: #fff;
-	border: 2px solid #001;
+	border: 1px solid #001;
 	color: #001;
 }
 
