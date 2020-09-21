@@ -158,6 +158,7 @@ a {
 
 .chat-form-container input[type='text'] {
 	font-size: 16px;
+	font-family: "Muli";
 	height: 50px;
 	border: 1px solid #eee;
 	border-radius: 5px;
@@ -228,6 +229,7 @@ a {
 	border-radius: 5px;
 	height: 50px;
 	width: 100%;
+	font-family: "Muli";
 	transition: 0.3s;
 }
 .join-main input[type='text']:focus {
