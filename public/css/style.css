@@ -241,6 +241,7 @@ a {
 	outline: none;
 	width: 100%;
 	transition: 0.3s;
+	background-color: #fff;
 }
 
 .join-main select:focus {
