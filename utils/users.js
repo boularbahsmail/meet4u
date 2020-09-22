@@ -1,10 +1,11 @@
 const users = [];
+const online = "•";
 
 // Join user to chat
 function userJoin(id, username, room) {
   const user = { id, username, room };
 
-  users.push(user + "<span style='color:green;'> •</span>");
+  users.push(user);
 
   return user;
 }

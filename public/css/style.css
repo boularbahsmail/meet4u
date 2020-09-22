@@ -144,7 +144,9 @@ a {
 }
 
 .chat-messages .message .meta span {
-	color: #777;
+	color: gray;
+	font-weight: initial;
+	font-size: 14px;
 }
 
 .chat-form-container {
@@ -170,7 +172,7 @@ a {
 }
 
 .chat-form-container input[type='text']:focus {
-	box-shadow: 0 0 0 0.09rem #001;
+	border: 1px solid #bbb;
 }
 
 /* Join Page */
@@ -233,7 +235,7 @@ a {
 	transition: 0.3s;
 }
 .join-main input[type='text']:focus {
-	box-shadow: 0 0 0 0.09rem #001;
+	border: 1px solid #bbb;
 }
 
 .join-main select {
@@ -250,7 +252,7 @@ a {
 }
 
 .join-main select:focus {
-	box-shadow: 0 0 0 0.09rem #001;
+	border: 1px solid #bbb;
 }
 
 .join-main .btn {
@@ -258,7 +260,7 @@ a {
 	width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
 	.chat-main {
 		display: block;
 	}
@@ -313,4 +315,20 @@ body::-webkit-scrollbar {
 #load {
 	display: none;
 	margin: 2.5%;
+}
+
+.user-name {
+	border:1px solid #eee;
+	border-radius: 5px;
+	margin: 6px;
+	width: 100%;
+	transition: 0.3s;
+}
+
+.user-name:hover {
+	background-color: #eee;
+}
+
+#user_name_joined {
+	color: red;
 }
