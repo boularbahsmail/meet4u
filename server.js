@@ -58,7 +58,7 @@ io.on('connection', socket => {
     if (user) {
       io.to(user.room).emit(
         'message',
-        formatMessage(botName, `${user.username} has left the chat`)
+        formatMessage(botName, `<span id="user_name_left">${user.username}</span> has left the chat`)
       );
 
       // Send users and room info

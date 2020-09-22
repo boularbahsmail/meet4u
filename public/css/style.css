@@ -330,5 +330,11 @@ body::-webkit-scrollbar {
 }
 
 #user_name_joined {
-	color: red;
+	/*font-weight: bolder;*/
+	color: royalblue;
+}
+
+#user_name_left {
+	/*font-weight: bolder;*/
+	color: royalblue;
 }
