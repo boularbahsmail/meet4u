@@ -51,6 +51,9 @@ function outputMessage(message) {
   <p class="text">
     ${message.text}
   </p>`;
+  setTimeout(function(){
+   div.style.backgroundColor = "transparent"; 
+ }, 500);
   document.querySelector('.chat-messages').appendChild(div);
 }
 
