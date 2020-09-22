@@ -337,4 +337,10 @@ body::-webkit-scrollbar {
 #user_name_left {
 	/*font-weight: bolder;*/
 	color: royalblue;
+
+}
+@media only screen and (max-width: 900px) {
+	.btn {
+		cursor: none;
+	}
 }
