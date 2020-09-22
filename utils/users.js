@@ -4,7 +4,7 @@ const users = [];
 function userJoin(id, username, room) {
   const user = { id, username, room };
 
-  users.push(user);
+  users.push(user + "<span style='color:green;'> •</span>");
 
   return user;
 }
