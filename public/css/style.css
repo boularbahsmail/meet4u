@@ -133,7 +133,7 @@ a {
 	margin-bottom: 15px;
 	border-radius: 5px;
 	border: 1px solid #eee;
-	background-color: #F8F8F8;
+	/*background-color: #F8F8F8;*/
 	transition: 0.3s;
 }
 
@@ -319,7 +319,7 @@ body::-webkit-scrollbar {
 	margin: 2.5%;
 }
 
-.user-name {
+.user_name {
 	border:1px solid #eee;
 	border-radius: 5px;
 	margin: 6px;
@@ -327,7 +327,7 @@ body::-webkit-scrollbar {
 	transition: 0.3s;
 }
 
-.user-name:hover {
+.user_name:hover {
 	background-color: #eee;
 }
 

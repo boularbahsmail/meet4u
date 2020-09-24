@@ -47,10 +47,11 @@ chatForm.addEventListener('submit', e => {
 function outputMessage(message) {
   const div = document.createElement('div');
   div.classList.add('message');
-  div.innerHTML = `<p class="meta">${message.username} <span>${message.time}</span></p>
+  div.innerHTML = `<p class="meta" id="metaa">${message.username} <span>${message.time}</span></p>
   <p class="text">
     ${message.text}
   </p>`;
+  div.setAttribute('id', 'message');
   setTimeout(function(){
    div.style.backgroundColor = "transparent"; 
  }, 500);
@@ -65,7 +66,15 @@ function outputRoomName(room) {
 // Add users to DOM
 function outputUsers(users) {
   userList.innerHTML = `
-    ${users.map(user => `<li class="user-name" id="user_name" title="Online" style="padding:15px 20px;">${user.username}`+
+    ${users.map(user => `<li name="user_namehh" class="user_name" id="user_name" title="Online" style="padding:15px 20px;">${user.username}`+
       `<span style="color:green"> •</span>`+`</li>`).join('')}
   `;
 }
+// // choose a color randomly
+// function generateRandomColor() {
+//     var randomColor = '#'+Math.floor(Math.random()*10525267).toString(16);
+//     return randomColor;
+//     //random color will be freshly served
+// }
+// document.getElementById("room-name").style.backgroundColor = generateRandomColor();
+// // someDiv.style.color = generateRandomColor();
