@@ -67,7 +67,7 @@ function outputRoomName(room) {
 function outputUsers(users) {
   userList.innerHTML = `
     ${users.map(user => `<li name="user_namehh" class="user_name" id="user_name" title="Online" style="padding:15px 20px;">${user.username}`+
-      `<span style="color:green"> •</span>`+`</li>`).join('')}
+      `<span style="color:green;float:right;"> •</span>`+`</li>`).join('')}
   `;
 }
 // // choose a color randomly
