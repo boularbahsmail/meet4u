@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "start": "nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "author": "Ismail Boularbah",
   "license": "MIT",
@@ -15,7 +15,6 @@
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4",
-    "http-server": "^0.10.0"
+    "nodemon": "^2.0.4"
   }
 }
