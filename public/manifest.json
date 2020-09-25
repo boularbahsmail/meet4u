@@ -23,5 +23,7 @@
 
   "scope": "./",
   "start_url": "index.html"
-
 }
+
+  // "scope": "./chat",
+  // "start_url": "chat.html"
