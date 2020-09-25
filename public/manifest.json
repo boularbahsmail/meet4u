@@ -1,4 +1,3 @@
-
 {
   "short_name": "Meet",
   "name": "Meet",
@@ -6,7 +5,7 @@
     {
       "src": "https://www.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     },
     {
       "src": "https://www.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png",
@@ -15,7 +14,7 @@
     }
   ],
   "start_url": "https://www.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png",
-  "background_color": "#001",
+  "background_color": "transparent",
   "display": "standalone",
   "scope": "/maps/",
   "theme_color": "#001"
@@ -24,6 +23,3 @@
   "scope": "./",
   "start_url": "index.html"
 }
-
-  // "scope": "./chat",
-  // "start_url": "chat.html"
