@@ -70,6 +70,8 @@ function outputUsers(users) {
       `<span style="color:green;float:right;"> •</span>`+`</li>`).join('')}
   `;
 }
+
+
 // // choose a color randomly
 // function generateRandomColor() {
 //     var randomColor = '#'+Math.floor(Math.random()*10525267).toString(16);
