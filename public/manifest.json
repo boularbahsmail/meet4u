@@ -13,7 +13,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://www.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png",
+  "start_url": "https://meet4u.herokuapp.com/",
   "background_color": "transparent",
   "display": "standalone",
   "scope": "/maps/",
