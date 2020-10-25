@@ -341,7 +341,7 @@ body::-webkit-scrollbar {
 	color: royalblue;
 
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
 	.btn {
 		cursor: none;
 	}

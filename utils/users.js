@@ -4,7 +4,7 @@ const online = "•";
 // Join user to chat
 function userJoin(id, username, room) {
   const user = { id, username, room };
-
+  // push new user to users array
   users.push(user);
 
   return user;

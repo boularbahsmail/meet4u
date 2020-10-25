@@ -1,10 +1,11 @@
 const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
 const roomName = document.getElementById('room-name');
-const userList = document.getElementById('users');
+const usersList = document.getElementById('users');
 
 // Get username and room from URL
 const { username, room } = Qs.parse(location.search, {
+  // ignore perfix of query
   ignoreQueryPrefix: true
 });
 
@@ -21,7 +22,7 @@ socket.on('roomUsers', ({ room, users }) => {
 
 // Message from server
 socket.on('message', message => {
-  // console.log(message);
+  // outputing user message
   outputMessage(message);
 
   // Scroll down
@@ -65,7 +66,7 @@ function outputRoomName(room) {
 
 // Add users to DOM
 function outputUsers(users) {
-  userList.innerHTML = `
+  usersList.innerHTML = `
     ${users.map(user => `<li name="user_namehh" class="user_name" id="user_name" title="Online" style="padding:15px 20px;">${user.username}`+
       `<span style="color:green;float:right;"> •</span>`+`</li>`).join('')}
   `;
@@ -80,3 +81,4 @@ function outputUsers(users) {
 // }
 // document.getElementById("room-name").style.backgroundColor = generateRandomColor();
 // // someDiv.style.color = generateRandomColor();
+
