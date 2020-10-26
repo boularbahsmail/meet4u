@@ -8,7 +8,9 @@ self.addEventListener('install', function(event) {
             return cache.add('public/css/style.css');
             return cache.add('public/js/animation.js');
             return cache.add('public/js/main.js');
-            return cache.add('server.js');
+            return cache.add('public/js/main.js');
+            return cache.add('utils/users.js');
+            return cache.add('utils/messages.js');
         })
     );
 });
