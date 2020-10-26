@@ -11,8 +11,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="manifest" href="manifest.json" />
     <title id="title">Meet • Chat</title>
+           <meta name="theme-color" content="#262626" />
+    <link rel="manifest" href="manifest.json" />
   </head>
   <body onfocus="msgNot()">
     <div class="chat-container">
@@ -63,5 +64,11 @@
     ></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/main.js"></script>
+        <script>
+      // service worker supported by browser
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      };
+    </script>
   </body>
 </html>

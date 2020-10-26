@@ -12,8 +12,9 @@
 			crossorigin="anonymous"
 		/>		
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="manifest" href="manifest.json" />
 		<title>Meet • Login</title>
+		       <meta name="theme-color" content="#262626" />
+    <link rel="manifest" href="manifest.json" />
 	</head>
 	<body>
 		<div class="join-container">
@@ -58,5 +59,11 @@
 			<h5 style="color: #aaa;font-weight: inherit;">&copy; 2020 BOULARBAH ISMAIL</h5>
 		</center>
 		<script src="js/animation.js"></script>
+		    <script>
+      // service worker supported by browser
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      };
+    </script>
 	</body>
 </html>

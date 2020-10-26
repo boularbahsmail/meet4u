@@ -1,25 +1,20 @@
 {
-  "short_name": "Meet",
-  "name": "Chat app",
-  "icons": [
-    {
-      "src": "https://www.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    },
-    {
-      "src": "https://www.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "https://meet4u.herokuapp.com/",
-  "background_color": "transparent",
-  "display": "standalone",
-  "scope": "/maps/",
-  "theme_color": "#001"
-,
-
-  "scope": "./",
-  "start_url": "index.html"
+    "short_name": "Meet",
+    "name": "Chat app",
+    "icons": [
+        {
+            "src": "https://www.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "https://www.iconfinder.com/data/icons/social-media-2210/24/Medium-512.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#262626",
+    "display": "standalone",
+    "theme_color": "#262626"
 }
