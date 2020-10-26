@@ -3,11 +3,11 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('sw-cache').then(function(cache) {
             // Static files the make up the applicaiton shell are cached
-            return cache.add('index.html');
-            return cache.add('chat.html');
-            return cache.add('css/style.css');
-            return cache.add('js/animation.js');
-            return cache.add('js/main.js');
+            return cache.add('public/index.html');
+            return cache.add('public/chat.html');
+            return cache.add('public/css/style.css');
+            return cache.add('public/js/animation.js');
+            return cache.add('public/js/main.js');
             return cache.add('server.js');
         })
     );
