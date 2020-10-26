@@ -4,11 +4,11 @@ self.addEventListener('install', function(event) {
         caches.open('sw-cache').then(function(cache) {
             // Static files the make up the applicaiton shell are cached
             return cache.add('index.html');
-            return cache.add('main.css');
-            return cache.add('style.css');
-            return cache.add('app.js');
-            return cache.add('firebase.js');
-            return cache.add('jquery.js');
+            return cache.add('chat.html');
+            return cache.add('css/style.css');
+            return cache.add('js/animation.js');
+            return cache.add('js/main.js');
+            return cache.add('server.js');
         })
     );
 });
