@@ -24,7 +24,7 @@
           viewBox="0 0 172 172"
           style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#000000"><path d="M2.6875,-0.1075c-1.65281,0.37625 -2.82187,1.85438 -2.795,3.5475v165.12c0.01344,1.94844 1.59906,3.53406 3.5475,3.5475h103.2c1.94844,-0.01344 3.53406,-1.59906 3.5475,-3.5475v-34.4h-7.095v30.8525h-96.105v-158.025h96.105v30.8525h7.095v-34.4c-0.01344,-1.94844 -1.59906,-3.53406 -3.5475,-3.5475h-103.2c-0.25531,-0.02687 -0.49719,-0.02687 -0.7525,0zM133.8375,51.9225c-1.29,0.22844 -2.32469,1.16906 -2.6875,2.41875c-0.36281,1.26313 0.01344,2.60688 0.9675,3.49375l24.6175,24.725h-101.695c-0.1075,0 -0.215,0 -0.3225,0c-1.89469,0.09406 -3.37281,1.70656 -3.27875,3.60125c0.09406,1.89469 1.70656,3.37281 3.60125,3.27875h101.695l-24.6175,24.725c-1.02125,0.83313 -1.49156,2.16344 -1.19594,3.45344c0.29562,1.27656 1.30344,2.28438 2.58,2.58c1.29,0.29563 2.62031,-0.17469 3.45344,-1.19594l30.6375,-30.53l2.365,-2.4725l-2.365,-2.4725l-30.6375,-30.53c-0.71219,-0.76594 -1.74687,-1.15562 -2.795,-1.075c-0.1075,0 -0.215,0 -0.3225,0z"></path></g></g></svg> Log out</a>
       </header>
-      <div class="chat-form-container">
+      <!-- <div class="chat-form-container">
         <form id="chat-form">
           <input
             id="msg"
@@ -40,8 +40,9 @@
             style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#001"><path d="M149.06667,17.2c-0.55025,0.00377 -1.09709,0.08674 -1.6237,0.24635c-0.15501,0.04207 -0.30818,0.09064 -0.45911,0.14557l-126.05495,40.08854v0.02239c-2.23962,0.83573 -3.72568,2.97333 -3.72891,5.3638c0.00425,2.00222 1.05271,3.85719 2.76589,4.89349l38.30807,30.39114l75.73151,-60.35677l-60.35677,75.73151l30.36875,38.28567c1.0349,1.7286 2.90117,2.78714 4.91589,2.78828c2.39047,-0.00322 4.52807,-1.48928 5.3638,-3.72891h0.02239l40.12214,-126.16692c0.041,-0.11449 0.07834,-0.23027 0.11198,-0.34714c0.15961,-0.52661 0.24258,-1.07345 0.24636,-1.6237c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
           </button>
         </form>
-      </div>
+      </div> -->
       <main class="chat-main">
+        <br>
         <div class="chat-sidebar">
           <!-- <h3><i class="fas fa-comments"></i> Room Name:</h3> -->
           <h2 id="room-name"></h2>
@@ -55,6 +56,23 @@
           <br>
         </div>
       </main>
+    </div>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Message.."
+          required
+          autocomplete="off"
+        />
+        <button title="Send" class="btn" style="background-color: transparent;border:none;transform: rotate(45deg);">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="30" height="30"
+          viewBox="0 0 172 172"
+          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#001"><path d="M149.06667,17.2c-0.55025,0.00377 -1.09709,0.08674 -1.6237,0.24635c-0.15501,0.04207 -0.30818,0.09064 -0.45911,0.14557l-126.05495,40.08854v0.02239c-2.23962,0.83573 -3.72568,2.97333 -3.72891,5.3638c0.00425,2.00222 1.05271,3.85719 2.76589,4.89349l38.30807,30.39114l75.73151,-60.35677l-60.35677,75.73151l30.36875,38.28567c1.0349,1.7286 2.90117,2.78714 4.91589,2.78828c2.39047,-0.00322 4.52807,-1.48928 5.3638,-3.72891h0.02239l40.12214,-126.16692c0.041,-0.11449 0.07834,-0.23027 0.11198,-0.34714c0.15961,-0.52661 0.24258,-1.07345 0.24636,-1.6237c0,-3.16643 -2.5669,-5.73333 -5.73333,-5.73333z"></path></g></g></svg>
+        </button>
+      </form>
     </div>
     <center><h5 style="color: #aaa;font-weight: inherit;">&copy; 2020 BOULARBAH ISMAIL</h5></center>
     <script
